@@ -1,0 +1,24 @@
+html
+    head
+        title
+    body
+        h1 Movie List
+
+        a(href='/add') Add new movie
+
+        table
+            thead
+                tr 
+                    th Movie Title
+                    th Movie Rate
+            tbody 
+            each row in data 
+                tr 
+                    td= row.movie_title 
+                    td= row.movie_rate 
+                    
+                    td
+                        a(href='/edit/' + row.id_movie) Edit
+                    td 
+                        a(href='/delete/' + row.id_movie) Delete
+                    

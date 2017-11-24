@@ -1,0 +1,13 @@
+html
+    head
+        title Create 
+    body 
+        h1 Insert New Movie
+        form(action='/insert', method='POST')
+            div 
+                label(for="movie_title") Movie Title:
+                input(name='movie_title', type='text')
+            div
+                label(for="movie_rate") Movie Rate:
+                input(name='movie_rate', type="number")
+            button(type='submit') Post

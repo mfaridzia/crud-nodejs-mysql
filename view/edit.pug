@@ -1,0 +1,16 @@
+html
+    body
+        title Edit Data
+    body
+        h1 title
+        form(action='/update', method='POST')
+            div
+                input(type='hidden', name='id_movie', value= data.id_movie)
+            div
+                label(for="movie_title") Movie Title:
+                input(type='text', name='movie_title', value= data.movie_title)
+            div
+                label(for="movie_rate") Movie Rate:
+                input(type='number', name='movie_rate', value= data.movie_rate)
+
+            button(type='submit') Update
